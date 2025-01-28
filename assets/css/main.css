@@ -1,5 +1,4 @@
-@charset "utf-8";
-
+/* main.css */
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
@@ -10,26 +9,21 @@ body {
     font-family: "Open Sans", Arial, sans-serif;
 }
 
-/* - - - - - - - - - - - - - - - - - - */
-/*          Header & Footer            */
-/* - - - - - - - - - - - - - - - - - - */
-
-body {
-    font-family: "Inter", Arial,sans-serif;    
-}
-.container { 
-    width: min(100% - 40px, 1280px);
-}
 header {
-    height: 56px;
-    background-color: rgb(68, 30, 191);
+    background-color: transparent; 
+    padding: 10px 0; 
+    position: absolute; 
+    top: 0;            
+    left: 0;           
+    width: 100%;         
+    z-index: 10;  
 }
 
 h1 {
     font-size: 25px;
     font-weight: 600;
     color:#fff;
-    margin-left: 20px;
+    margin-left: 0; 
     padding-top: 10px;
 }
 .flex {
@@ -69,7 +63,7 @@ footer {
 
     p {
         text-align: center;
-        line-height: 70px;
+        line-height: 60px;
         font-size: 18px;
         font-weight: 400;
         color: #fff;
@@ -110,12 +104,12 @@ footer {
     }
 }
 
-
 .hero-banner {
     height: 400px;
-    background: blueviolet url(../img/spiral.jpg) center / cover no-repeat;
+    background: blueviolet url(../img/clouds.jpg) center / cover no-repeat;
     text-align: center;
     place-content: center;
+    position: relative;
 
     .overlay {
         height: 100%;
@@ -132,11 +126,14 @@ footer {
 }
 
 section {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .article {
     background-color: #fff;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -144,6 +141,7 @@ article{
     .title {
         font-size: 3.2rem;
         font-weight: 600;
+        
     }
 
     .author a {
@@ -156,19 +154,8 @@ article{
     .main-text {
         p {
             margin-top: 10px;
-            font-size: 1.7;
+            font-size: 1.7rem;
             font-weight: 400;
         }
     } 
 }
-
-figure {
-    padding: 30px 0;
-
-    img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
-}
-
