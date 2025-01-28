@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    background-color: #f0f1f4;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* - - - - - - - - - - - - - - - - - - */
+/*          Header & Footer            */
+/* - - - - - - - - - - - - - - - - - - */
+
+body {
+    font-family: "Inter", Arial,sans-serif;    
+}
+.container { 
+    width: min(100% - 40px, 1280px);
+}
+header {
+    height: 56px;
+    background-color: rgb(68, 30, 191);
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color:#fff;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+ul {
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline;
+    line-height: 50px;
+
+    a {
+        font-size: 17px;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+    
+        &:hover {
+            text-decoration: underline;
+        }  
+    } 
+}
+
+li + li {
+    margin-left: 15px;
+}
+
+footer {
+    height: 100px;
+    background-color:#605d78;
+
+    p {
+        text-align: center;
+        line-height: 70px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+    }
+   .contact-section {
+        position: relative;
+        top: 30px;
+        left: 20px;
+   }
+    ul {
+        list-style: none;
+    }
+    li {
+        display: inline;
+    }
+    
+    .icon {
+        font-size: 30px;
+        color: #605d78;
+        cursor: pointer;
+        transition: color .4s ease-in-out;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #e2e2e2;
+        line-height: 1.4;
+          
+    } 
+    .icon.fa-facebook:hover {
+        color: #1877F2
+     }  
+    .icon.fa-linkedin:hover {
+        color: #0077B5
+     }
+    .icon.fa-github:hover {
+        color:#000000
+    }
+}
+
+
+.hero-banner {
+    height: 400px;
+    background: blueviolet url(../img/spiral.jpg) center / cover no-repeat;
+    text-align: center;
+    place-content: center;
+
+    .overlay {
+        height: 100%;
+        text-align: center;
+        place-content: center;
+        backdrop-filter: brightness(60%);
+
+        h2 {
+            font-size: 6rem;
+            font-weight: 800;
+            color: #fff;
+        }
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+.article {
+    background-color: #fff;
+}
+
+
+article{
+    .title {
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .author a {
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #007fff;
+    }
+    
+    .main-text {
+        p {
+            margin-top: 10px;
+            font-size: 1.7;
+            font-weight: 400;
+        }
+    } 
+}
+
+figure {
+    padding: 30px 0;
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
